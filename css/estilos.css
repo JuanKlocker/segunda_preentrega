@@ -1,0 +1,218 @@
+/* GENERAL */
+@font-face {
+    font-family: 'KeepCalm';
+    src: url(../ttf/KeepCalm-Medium.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'KeepCalm';
+}
+body{
+    background-color: gold;
+    height: 100vh;
+}
+header{
+    height: 15%;
+    grid-area: header;
+    text-align: center;
+    
+}
+aside{
+    text-align: center;
+    display: flex;
+    height: 100%;
+    grid-area: menu;
+    background-color: gold;
+}
+
+footer{
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-content: flex-end;
+    grid-area: footer;
+}
+footer ol{
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+}
+footer li{
+    list-style: none;
+
+}
+
+/* ICONOS */
+.bi-house-fill{
+    color: black;
+font-size: 125px;
+}
+.bi-people-fill{
+    color: black;
+    font-size: 125px
+}
+.bi-cart-fill{
+    color: black;
+    font-size: 125px
+}
+.bi-shop-window{
+    color: black;
+    font-size: 125px
+}
+.bi-egg-fried{
+    color: black;
+    font-size: 125px
+}
+.bi-mortarboard-fill{
+    color: black;
+    font-size: 125px
+}
+.bi-facebook{
+    color: black;
+    font-size: 25px;
+}
+.bi-instagram{
+    color: black;
+    font-size: 25px;
+}
+
+/* INDEX */
+.mainIndex{
+height: 89vh;
+background-color: #FAFAD2;
+border-radius: 15%;
+margin: 3%;
+}
+.imgIndex{
+    height: 25%;
+    text-align: center;
+}
+.menuIndex{
+    margin: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly ;
+    height: 70%;
+}
+.menuIndex li{
+    width: 125px;
+    align-content: center;
+    border: solid;
+    padding: 20px;
+    list-style: none;
+    text-align: center;
+    transition: all 300ms;
+}
+.menuIndex li:hover{
+    background-color: gold;
+    
+}
+.menuIndex li h4{
+text-decoration: none;
+color: black;
+}
+.menuIndex li a{
+    text-decoration: none black;  
+    
+}
+
+/* INICIO */
+#gridAreas{
+    display: grid;
+    background-color:#FAFAD2 ;
+    grid-template-areas: 
+    "menu header"
+    "menu main"
+    "menu footer";
+    grid-template-columns: 
+    1fr 7fr;
+    height: 100vh;
+}
+.menuInicio{
+    margin-left: 20px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+
+}
+.menuInicio li{
+    text-align: center;
+    padding:  25px ;
+    list-style: none;
+    
+    
+}
+.menuInicio li:hover{
+    transition: all 300ms;
+    border: solid;
+}
+.menuInicio i{
+    font-size: 50px;
+}
+.h2Inicio{
+    text-align: center;
+    padding: 10px;
+}
+.artInicio{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+.pInicio{
+    margin: 2%;
+}
+/* TABLET */
+@media (min-width: 481px) and (max-width: 1024px){
+    #gridAreas{
+        display: grid;
+        background-color:#FAFAD2 ;
+        grid-template-rows: 
+        1fr 1fr 5fr 1fr;
+        height: 100vh;
+    }
+}
+/* SMARTPHONE */
+@media (max-width: 479px){
+    #gridAreas{
+        display: grid;
+        background-color:#FAFAD2 ;
+        grid-template-rows: 
+        1fr 1fr 5fr 1fr;
+        height: 100vh;
+    }
+
+}
+/* NOSOTROS */
+/* PRODUCTO */
+/* CONTACTO */
+.imgContacto{
+    height: 420px ;
+    width: auto;
+}
+/* RECETAS */
+
+.imgRecetas{
+    text-align: center;
+    height: 350px;
+    width: auto;
+}
+.pRecetas{
+    margin: 1%;
+    width: 50%;
+}
+/* CURSOS */
+.sectionCursos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 5%;
+}
+.buttonCursos{
+    background-color: gold;
+    border: solid;
+    color: black;
+    height: 180px;
+    width: 250px;
+}
